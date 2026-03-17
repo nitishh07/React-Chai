@@ -11,7 +11,10 @@ function App() {
   const addValue = () => {
 
     console.log("value added" , counter)
-    setCounter(counter + 1)
+    // setCounter(counter + 1)
+    setCounter(prevCounter => prevCounter + 1) //isme prev updtaed value ko use kr rha hai to ek baar me ans updted wla return hoga
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
   }
 
   const removeValue = () =>{
